@@ -1,1 +1,12 @@
+---
+- name: Deploy backend to Kubernetes
+  hosts: localhost
+  become: yes
+
+  tasks:
+    - name: Apply deployment file
+      command: kubectl apply -f k8s/backend-deployment.yaml
+
+    - name: Apply service file
+      command: kubectl apply -f k8s/backend-service.yaml
 
