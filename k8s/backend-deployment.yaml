@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: flask-backend:latest
+        image: shauryakumar13/flask-backend:latest
         ports:
         - containerPort: 5000
 
