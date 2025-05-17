@@ -2,21 +2,24 @@
 
 This project demonstrates how to manage and deploy a microservices-based backend (built with Flask) using Minikube for Kubernetes orchestration and optionally Ansible or Terraform for infrastructure automation.
 
+```
 # Project Structure
 ├── app
-│ └── backend
-│ ├── app.py # Flask backend service
-│ └── Dockerfile # Container specification
+│   └── backend
+│       ├── app.py                  # Flask backend service
+│       └── Dockerfile             # Container specification
 ├── k8s
-│ ├── backend-deployment.yaml # Kubernetes deployment config
-│ └── backend-service.yaml # Kubernetes service config
+│   ├── backend-deployment.yaml    # Kubernetes deployment config
+│   └── backend-service.yaml       # Kubernetes service config
 ├── ansible
-│ ├── install_docker.yml # Ansible playbook to install Docker
-│ ├── install_minikube.yml # Ansible playbook to install Minikube
-│ └── deploy_services.yml # Playbook for deploying app (optional)
+│   ├── install_docker.yml         # Ansible playbook to install Docker
+│   ├── install_minikube.yml       # Ansible playbook to install Minikube
+│   └── deploy_services.yml        # Playbook for deploying app (optional)
 ├── docs
-│ └── project-overview.md # Project report and documentation
-└── README.md # This file
+│   └── project-overview.md        # Project report and documentation
+└── README.md                      # This file
+```
+
 
 ---
 
